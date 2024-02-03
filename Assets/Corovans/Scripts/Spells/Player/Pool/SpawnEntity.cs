@@ -2,13 +2,13 @@ using UnityEngine;
 
 namespace Corovans.Scripts.Spells.Player.Pool
 {
-    public class Thunder : Spell
+    public class SpawnEntity : Spell
     {
-        [SerializeField] private GameObject thunderObject;
+        [SerializeField] private GameObject entity;
         
         public override void UseSpell()
         {
-            Instantiate(thunderObject, GetCursorPositionInWorld(), Quaternion.identity);
+            Instantiate(entity, GetCursorPositionInWorld(), Quaternion.identity);
         }
         
         public static Vector3 GetCursorPositionInWorld()

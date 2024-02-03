@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1521456356987983359}
   - component: {fileID: -7488573805279828274}
   m_Layer: 0
-  m_Name: Thunder
+  m_Name: Log
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cost: 20
-  entity: {fileID: 8120322130009092846, guid: 96805de97691f1546b3c1e9709e1637f, type: 3}
+  entity: {fileID: 3074343640699456534, guid: 710a724fbefa9034aa8e6c013921addd, type: 3}
