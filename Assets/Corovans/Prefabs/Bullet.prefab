@@ -100,7 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 10
   targetTag: Enemy
-  damage: 5
+  damage: 1
 --- !u!58 &-468071822236585276
 CircleCollider2D:
   m_ObjectHideFlags: 0

@@ -1,3 +1,4 @@
+using System;
 using Corovans.Scripts.Entities.Interfaces;
 using UnityEngine;
 
@@ -7,17 +8,24 @@ namespace Corovans.Scripts.Entities.Defenders.Wagon
     {
         [SerializeField] private int maxHealth;
         
-        private WagonModel _model;
+        public WagonModel Model { get; private set; }
+
+        public event Action OnInitialized;
 
         private void Awake()
         {
-            _model = new WagonModel(maxHealth: maxHealth);
+            Model = new WagonModel(maxHealth: maxHealth);
         }
-    
+
+        private void Start()
+        {
+            OnInitialized?.Invoke();
+        }
+
         public void TakeDamage(int damageAmount)
         {
-            _model.CurrentHealth -= damageAmount;
-            if (_model.CurrentHealth == 0)
+            Model.CurrentHealth -= damageAmount;
+            if (Model.CurrentHealth == 0)
             {
                 Die();
             }

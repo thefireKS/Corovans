@@ -50,8 +50,7 @@ namespace Corovans.Scripts.Entities.Enemies
         private IEnumerator AttackCoroutine()
         {
             _isAttacking = true;
-
-            Debug.Log("Attack!!!");
+            
             Attack();
             
             // Противник останавливается после атаки
