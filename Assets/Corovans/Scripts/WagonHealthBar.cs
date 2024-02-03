@@ -1,4 +1,3 @@
-using System;
 using Corovans.Scripts.Entities.Defenders.Wagon;
 using UnityEngine;
 using UnityEngine.UI;
