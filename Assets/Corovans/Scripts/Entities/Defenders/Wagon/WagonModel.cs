@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Corovans.Scripts.Entities.Deffenders.Wagon
+namespace Corovans.Scripts.Entities.Defenders.Wagon
 {
     public class WagonModel
     {

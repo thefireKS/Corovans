@@ -1,7 +1,7 @@
 using Corovans.Scripts.Entities.Interfaces;
 using UnityEngine;
 
-namespace Corovans.Scripts.Entities.Deffenders.Wagon
+namespace Corovans.Scripts.Entities.Defenders.Wagon
 {
     public class WagonController : MonoBehaviour, IDamageable
     {
@@ -11,8 +11,7 @@ namespace Corovans.Scripts.Entities.Deffenders.Wagon
 
         private void Awake()
         {
-            // Задаем максимальное здоровье при создании повозки
-            _model = new WagonModel(maxHealth: maxHealth); // Замените значение на ваше
+            _model = new WagonModel(maxHealth: maxHealth);
         }
     
         public void TakeDamage(int damageAmount)

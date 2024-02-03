@@ -1,5 +1,5 @@
 using System.Collections;
-using Corovans.Scripts.Entities.Deffenders.Wagon;
+using Corovans.Scripts.Entities.Defenders.Wagon;
 using UnityEngine;
 
 namespace Corovans.Scripts.Entities.Enemies
