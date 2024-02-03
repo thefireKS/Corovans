@@ -5,6 +5,8 @@ namespace Corovans.Scripts.Entities.Enemies
 {
     public class EnemyBase : MonoBehaviour, IDamageable
     {
+        [SerializeField] private AudioClip deathSound;
+        
         [SerializeField] private int maxHealth;
         private int _health;
 
@@ -29,6 +31,9 @@ namespace Corovans.Scripts.Entities.Enemies
         public void Die()
         {
             _isDying = true;
+            
+            AudioSource.PlayClipAtPoint(deathSound, transform.position);
+            
             Destroy(gameObject);
         }
 

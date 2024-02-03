@@ -1,5 +1,3 @@
-using System.Collections;
-
 namespace Corovans.Scripts.Spells.Player.Pool
 {
     public class Test : Spell

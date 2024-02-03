@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -9,7 +8,30 @@ namespace Corovans.Scripts.Spells.Player
     {
         private PlayerControls _playerControls;
         
-        [SerializeField] private Spell spells;
+        private Queue<Spell> _randomSpellQueue;
+        
+        [SerializeField] private Spell[] spells;
+        
+        private void ShuffleSpellArray()
+        {
+            _randomSpellQueue = new Queue<Spell>();
+            List<Spell> spellList = new List<Spell>(spells);
+            
+            System.Random random = new System.Random();
+            int n = spellList.Count;
+
+            while (n > 1)
+            {
+                n--;
+                int k = random.Next(n + 1);
+                (spellList[k], spellList[n]) = (spellList[n], spellList[k]);
+            }
+            
+            foreach (var spell in spellList)
+            {
+                _randomSpellQueue.Enqueue(spell);
+            }
+        }
 
         private void Awake()
         {
@@ -29,7 +51,12 @@ namespace Corovans.Scripts.Spells.Player
 
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
-            spells.UseSpell();
+            _randomSpellQueue.Dequeue().UseSpell();
+            
+            if (_randomSpellQueue.Count == 0)
+            {
+                ShuffleSpellArray();
+            }
         }
     }
 }
