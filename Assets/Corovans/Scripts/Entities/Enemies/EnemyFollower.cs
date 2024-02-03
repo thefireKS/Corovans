@@ -1,12 +1,16 @@
+using System.Collections;
 using UnityEngine;
 
-namespace Corovans.Scripts.Entities.Damageable.Enemies
+namespace Corovans.Scripts.Entities.Enemies
 {
     public class EnemyFollower : MonoBehaviour
     {
         private Transform _target;
+        private bool _isAttacking;
 
-        [SerializeField] private float distanceToTarget;
+        [SerializeField] private float distanceToAttack;
+        [SerializeField] private float restDuration;
+        private float _timeSinceLastAttack;
 
         private Rigidbody2D _rigidbody2D;
 
@@ -20,9 +24,39 @@ namespace Corovans.Scripts.Entities.Damageable.Enemies
 
         private void Update()
         {
-            if(distanceToTarget >= (_target.position - transform.position).magnitude) return;
-            var direction = (_target.position - transform.position).normalized;
-            _rigidbody2D.velocity = direction * speed;
+            float distanceToPlayer = Vector2.Distance(transform.position, _target.position);
+
+            if (!_isAttacking)
+            {
+                Debug.Log(distanceToPlayer);
+                if (distanceToPlayer <= distanceToAttack)
+                {
+                    StartCoroutine(AttackCoroutine());
+                }
+                else
+                {
+                    var direction = (_target.position - transform.position).normalized;
+                    _rigidbody2D.velocity = direction * speed;
+                }
+            }
+        }
+
+        private IEnumerator AttackCoroutine()
+        {
+            _isAttacking = true;
+
+            Debug.Log("Attack!!!");
+            
+            // Противник останавливается после атаки
+            _rigidbody2D.velocity = Vector2.zero;
+
+            // Здесь можно добавить логику атаки, например, вызов метода нанесения урона игроку
+
+            yield return new WaitForSeconds(restDuration);
+
+            _isAttacking = false;
+
+            // Противник может снова пускаться в погоню после отдыха
         }
     }
 }

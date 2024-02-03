@@ -12,7 +12,6 @@ namespace Corovans.Scripts
         {
             distanceTravveled += povozka.speed * Time.deltaTime;
             var percentage = distanceTravveled / povozka.pathCreator.path.length;
-            Debug.Log(percentage*100f);
         }
     }
 }
