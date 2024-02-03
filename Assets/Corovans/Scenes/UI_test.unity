@@ -216,6 +216,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -801,6 +809,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -1062,6 +1078,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -1367,6 +1391,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -1433,6 +1465,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -1499,6 +1539,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -1698,7 +1746,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1223158351
@@ -1934,6 +1982,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -2585,6 +2641,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -2643,6 +2707,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7184303278649770257, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
   m_PrefabInstance: {fileID: 1522756933}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1568611935
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1568611937}
+  - component: {fileID: 1568611936}
+  m_Layer: 0
+  m_Name: SpellUser
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1568611936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568611935}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d62f2c231474ea4baa9a6921bcc7b08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spells:
+  - {fileID: -7488573805279828274, guid: 9853eea0bb915d7418d898d5833b5737, type: 3}
+--- !u!4 &1568611937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568611935}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1648853676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2651,6 +2761,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -2807,6 +2925,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 139884328}
     m_Modifications:
+    - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: maxHealth
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
       value: 1
@@ -3197,7 +3323,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2769053835458255210, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: maxHealth
-      value: 5
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
+      propertyPath: speed
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3056770770386147332, guid: 111572d83e5aa4f4491f2162af5808ae, type: 3}
       propertyPath: damage
@@ -3266,3 +3396,4 @@ SceneRoots:
   - {fileID: 614800556}
   - {fileID: 1320543668}
   - {fileID: 671991198}
+  - {fileID: 1568611937}

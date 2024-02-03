@@ -9,6 +9,7 @@ namespace Corovans.Scripts.Spells.Player
         private PlayerControls _playerControls;
         
         private Queue<Spell> _randomSpellQueue;
+        private Spell _currentSpell;
         
         [SerializeField] private Spell[] spells;
         
@@ -37,6 +38,9 @@ namespace Corovans.Scripts.Spells.Player
         {
             _playerControls = new();
             _playerControls.Enable();
+            
+            ShuffleSpellArray();
+            _currentSpell = _randomSpellQueue.Dequeue();
         }
 
         private void OnEnable()
@@ -51,12 +55,14 @@ namespace Corovans.Scripts.Spells.Player
 
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
-            _randomSpellQueue.Dequeue().UseSpell();
+            _currentSpell.UseSpell();
             
             if (_randomSpellQueue.Count == 0)
             {
                 ShuffleSpellArray();
             }
+            
+            _currentSpell = _randomSpellQueue.Dequeue();
         }
     }
 }
