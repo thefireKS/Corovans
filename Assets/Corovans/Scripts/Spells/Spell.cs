@@ -4,7 +4,7 @@ namespace Corovans.Scripts.Spells
 {
     public abstract class Spell : MonoBehaviour
     {
-        [SerializeField] private int cost;
+        [field:SerializeField] public int Cost { get; private set; }
 
         public abstract void UseSpell();
     }

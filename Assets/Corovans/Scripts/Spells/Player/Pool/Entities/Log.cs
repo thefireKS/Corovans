@@ -1,4 +1,3 @@
-using System;
 using Corovans.Scripts.Entities.Enemies;
 using UnityEngine;
 

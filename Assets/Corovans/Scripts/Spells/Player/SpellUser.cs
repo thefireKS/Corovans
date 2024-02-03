@@ -6,6 +6,8 @@ namespace Corovans.Scripts.Spells.Player
 {
     public class SpellUser : MonoBehaviour
     {
+        private EnergySystem _energySystem;
+        
         private PlayerControls _playerControls;
         
         private Queue<Spell> _randomSpellQueue;
@@ -38,6 +40,8 @@ namespace Corovans.Scripts.Spells.Player
         {
             _playerControls = new();
             _playerControls.Enable();
+
+            _energySystem = FindObjectOfType<EnergySystem>();
             
             ShuffleSpellArray();
             _currentSpell = _randomSpellQueue.Dequeue();
@@ -55,6 +59,7 @@ namespace Corovans.Scripts.Spells.Player
 
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
+            if(_currentSpell.Cost > _energySystem.CurrentEnergy) return;
             _currentSpell.UseSpell();
             
             if (_randomSpellQueue.Count == 0)
