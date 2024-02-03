@@ -15,9 +15,13 @@ namespace Corovans.Scripts.Entities.Defenders.Wagon
         private void Awake()
         {
             Model = new WagonModel(maxHealth: maxHealth);
+        }
+
+        private void Start()
+        {
             OnInitialized?.Invoke();
         }
-    
+
         public void TakeDamage(int damageAmount)
         {
             Model.CurrentHealth -= damageAmount;
