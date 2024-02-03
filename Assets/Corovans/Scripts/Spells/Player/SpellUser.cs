@@ -60,7 +60,9 @@ namespace Corovans.Scripts.Spells.Player
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
             if(_currentSpell.Cost > _energySystem.CurrentEnergy) return;
+            
             _currentSpell.UseSpell();
+            _energySystem.ConsumeEnergy(_currentSpell.Cost);
             
             if (_randomSpellQueue.Count == 0)
             {

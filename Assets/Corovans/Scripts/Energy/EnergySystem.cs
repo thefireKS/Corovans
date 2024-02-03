@@ -16,6 +16,11 @@ namespace Corovans.Scripts
         [SerializeField] private float rechargeSpeed;
         private float _currentEnergy;
 
+        public void ConsumeEnergy(int energy)
+        {
+            CurrentEnergy -= energy;
+        }
+
         private void Update()
         {
             if (CurrentEnergy < MaxEnergy)
