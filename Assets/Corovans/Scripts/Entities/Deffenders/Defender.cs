@@ -1,7 +1,8 @@
 using System.Collections;
+using Corovans.Scripts.Entities.Enemies;
 using UnityEngine;
 
-namespace Corovans.Scripts
+namespace Corovans.Scripts.Entities.Deffenders
 {
     public class Defender : MonoBehaviour
     {

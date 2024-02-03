@@ -1,6 +1,7 @@
+using Corovans.Scripts.Entities.Interfaces;
 using UnityEngine;
 
-namespace Corovans.Scripts
+namespace Corovans.Scripts.Entities.Enemies
 {
     public class EnemyBase : MonoBehaviour, IDamageable
     {

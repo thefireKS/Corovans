@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Corovans.Scripts
+namespace Corovans.Scripts.GameCamera
 {
     public class CameraFollower : MonoBehaviour
     {

@@ -1,6 +1,7 @@
 #if UNITY_EDITOR
 using UnityEditor;
 #endif
+using Corovans.Scripts.Entities.Interfaces;
 using UnityEngine;
 
 namespace Corovans.Scripts

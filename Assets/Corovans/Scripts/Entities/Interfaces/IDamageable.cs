@@ -1,4 +1,4 @@
-namespace Corovans.Scripts
+namespace Corovans.Scripts.Entities.Interfaces
 {
     public interface IDamageable
     {

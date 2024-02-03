@@ -1,5 +1,5 @@
-using System;
 using System.Collections.Generic;
+using Corovans.Scripts.Entities.Enemies;
 using UnityEngine;
 
 namespace Corovans.Scripts

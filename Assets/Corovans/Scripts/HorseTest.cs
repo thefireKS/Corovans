@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Corovans.Scripts
 {
-    public class horseTest : MonoBehaviour
+    public class HorseTest : MonoBehaviour
     {
         [SerializeField] private int horseLevel;
         [SerializeField] private int horseQuantity;
