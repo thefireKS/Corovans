@@ -19,10 +19,8 @@ namespace Corovans.Scripts
         private void Update()
         {
             var pathMarkTransform = pathMark.transform;
-            var position = pathMarkTransform.position;
-            position = new Vector3(-(_pathImageLength/2) + _pathImageLength * pathObserver.Percentage,
+            var position = new Vector3(-(_pathImageLength/2) + _pathImageLength * pathObserver.Percentage,
                 0, 0);
-            Debug.Log(position);
             pathMarkTransform.localPosition = position;
         }
     }
