@@ -44,5 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 46c02f51b0301c847bfd351ab163045c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 10
+  <Cost>k__BackingField: 10
   entity: {fileID: 8120322130009092846, guid: 96805de97691f1546b3c1e9709e1637f, type: 3}
