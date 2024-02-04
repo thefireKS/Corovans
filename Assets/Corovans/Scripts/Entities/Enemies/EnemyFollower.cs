@@ -52,9 +52,15 @@ namespace Corovans.Scripts.Entities.Enemies
                     var direction = (_target.position - transform.position).normalized;
                     float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg;
                     transform.rotation = Quaternion.AngleAxis(angle, Vector3.forward);
-                    _rigidbody2D.velocity = direction * speed;
-                    _isWalk = true;
-                    _animator.SetBool("IsWalking", _isWalk);
+
+                    // Проверяем, есть ли коллизии перед объектом
+                    if (!HasCollisionAhead())
+                    {
+                        // Если нет коллизий, перемещаем объект с использованием Translate
+                        transform.Translate(Vector2.right * (speed * Time.deltaTime));
+                        _isWalk = true;
+                        _animator.SetBool("IsWalking", _isWalk);
+                    }
                 }
             }
         }
@@ -68,7 +74,6 @@ namespace Corovans.Scripts.Entities.Enemies
             Attack();
             yield return new WaitForSeconds(0.625f);
             // Противник останавливается после атаки
-            _rigidbody2D.velocity = Vector2.zero;
 
             // Здесь можно добавить логику атаки, например, вызов метода нанесения урона игроку
 
@@ -84,9 +89,11 @@ namespace Corovans.Scripts.Entities.Enemies
         {
             _isResting = true;
             _animator.SetBool("IsResting", _isResting);
+            _rigidbody2D.simulated = false;
 
             yield return new WaitForSeconds(restDuration);
-
+            
+            _rigidbody2D.simulated = true;
             _isResting = false;
             _animator.SetBool("IsResting", _isResting);
         }
@@ -94,6 +101,14 @@ namespace Corovans.Scripts.Entities.Enemies
         private void Attack()
         {
             _wagonController.TakeDamage(damageAmount: damage);
+        }
+        
+        private bool HasCollisionAhead()
+        {
+            // Определяем, есть ли коллизии перед объектом
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.right, 0.5f);
+            // Если есть коллизии, возвращаем true, иначе false
+            return hit.collider != null;
         }
     }
 }

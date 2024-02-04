@@ -33,7 +33,7 @@ namespace Corovans.Scripts.Entities.Defenders.Wagon
 
         public void Die()
         {
-            Debug.Log("Wagon died");
+            
         }
     }
 }
