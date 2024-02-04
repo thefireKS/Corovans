@@ -66,7 +66,7 @@ namespace Corovans.Scripts.Entities.Enemies
             
             
             Attack();
-            
+            yield return new WaitForSeconds(0.625f);
             // Противник останавливается после атаки
             _rigidbody2D.velocity = Vector2.zero;
 
