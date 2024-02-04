@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Corovans.Scripts.Energy;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -6,9 +7,12 @@ namespace Corovans.Scripts.Spells.Player
 {
     public class SpellUser : MonoBehaviour
     {
+        private EnergySystem _energySystem;
+        
         private PlayerControls _playerControls;
         
         private Queue<Spell> _randomSpellQueue;
+        private Spell _currentSpell;
         
         [SerializeField] private Spell[] spells;
         
@@ -37,6 +41,11 @@ namespace Corovans.Scripts.Spells.Player
         {
             _playerControls = new();
             _playerControls.Enable();
+
+            _energySystem = FindObjectOfType<EnergySystem>();
+            
+            ShuffleSpellArray();
+            _currentSpell = _randomSpellQueue.Dequeue();
         }
 
         private void OnEnable()
@@ -51,12 +60,17 @@ namespace Corovans.Scripts.Spells.Player
 
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
-            _randomSpellQueue.Dequeue().UseSpell();
+            if(_currentSpell.Cost > _energySystem.CurrentEnergy) return;
+            
+            _currentSpell.UseSpell();
+            _energySystem.ConsumeEnergy(_currentSpell.Cost);
             
             if (_randomSpellQueue.Count == 0)
             {
                 ShuffleSpellArray();
             }
+            
+            _currentSpell = _randomSpellQueue.Dequeue();
         }
     }
 }

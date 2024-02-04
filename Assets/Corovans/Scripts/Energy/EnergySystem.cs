@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Corovans.Scripts
+namespace Corovans.Scripts.Energy
 {
     public class EnergySystem : MonoBehaviour
     {
@@ -15,6 +14,11 @@ namespace Corovans.Scripts
 
         [SerializeField] private float rechargeSpeed;
         private float _currentEnergy;
+
+        public void ConsumeEnergy(int energy)
+        {
+            CurrentEnergy -= energy;
+        }
 
         private void Update()
         {
