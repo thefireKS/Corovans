@@ -11,7 +11,8 @@ namespace Corovans.Scripts.Gameplay.Wagon
 
         private void Awake()
         {
-            wagonFollower.speed = targetSpeed * HorseManager.Instance.CurrentHorse.SpeedModifier * WeightManager.Instance.CalculateModifier();
+            wagonFollower.speed =
+                targetSpeed; // * HorseManager.Instance.CurrentHorse.SpeedModifier * WeightManager.Instance.CalculateModifier();
         }
     }
 }

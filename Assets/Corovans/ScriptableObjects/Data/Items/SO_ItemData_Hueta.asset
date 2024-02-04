@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30b34c66a9ccd414aa2411bc2a7699dd, type: 3}
   m_Name: SO_ItemData_Hueta
   m_EditorClassIdentifier: 
-  weight: 2000
+  weight: 1

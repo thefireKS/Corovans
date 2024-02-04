@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace Corovans.Scripts.Energy
 {
-    public class EnergySystem : MonoBehaviour
+    public class EnergyManager : MonoBehaviour
     {
         [field:SerializeField] public float MaxEnergy { get; private set; }
 

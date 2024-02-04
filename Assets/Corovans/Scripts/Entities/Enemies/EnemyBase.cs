@@ -5,7 +5,8 @@ namespace Corovans.Scripts.Entities.Enemies
 {
     public class EnemyBase : MonoBehaviour, IDamageable
     {
-        [SerializeField] private AudioClip deathSound;
+        [SerializeField] private AudioClip[] deathSounds;
+        [Range(0,1)][SerializeField] private float deathSoundChance;
         
         [SerializeField] private int maxHealth;
         private int _health;
@@ -32,7 +33,12 @@ namespace Corovans.Scripts.Entities.Enemies
         {
             _isDying = true;
             
-            AudioSource.PlayClipAtPoint(deathSound, transform.position);
+            if (deathSounds.Length > 0 && Random.value <= deathSoundChance)
+            {
+                int randomIndex = Random.Range(0, deathSounds.Length);
+                AudioClip randomDeathSound = deathSounds[randomIndex];
+                AudioSource.PlayClipAtPoint(randomDeathSound, transform.position);
+            }
             
             Destroy(gameObject);
         }
