@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Corovans.Scripts.Energy;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -60,8 +61,6 @@ namespace Corovans.Scripts.Spells.Player
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
             if(_currentSpell.Cost > _energySystem.CurrentEnergy) return;
-            Debug.Log(_currentSpell.Cost > _energySystem.CurrentEnergy);
-            Debug.Log($"{_currentSpell.Cost} : {_energySystem.CurrentEnergy}");
             
             _currentSpell.UseSpell();
             _energySystem.ConsumeEnergy(_currentSpell.Cost);

@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using Corovans.Scripts.Entities.Enemies;
 using UnityEngine;
@@ -9,7 +8,13 @@ namespace Corovans.Scripts.Spells.Player.Pool.Entities
     {
         private readonly List<EnemyBase> _enemies = new();
         [SerializeField] private float attractionSpeed;
-        
+        [SerializeField] private float lifetime;
+
+        private void Awake()
+        {
+            Destroy(gameObject,lifetime);
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.CompareTag("Enemy"))
@@ -28,7 +33,6 @@ namespace Corovans.Scripts.Spells.Player.Pool.Entities
 
         private void Update()
         {
-            
             foreach (var enemy in _enemies)
             {
                 AttractEnemy(enemy);

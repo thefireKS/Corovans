@@ -1,3 +1,4 @@
+using Corovans.Scripts.Energy;
 using UnityEngine;
 using UnityEngine.UI;
 

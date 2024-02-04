@@ -1,7 +1,6 @@
-using System;
 using UnityEngine;
 
-namespace Corovans.Scripts
+namespace Corovans.Scripts.Energy
 {
     public class EnergySystem : MonoBehaviour
     {
