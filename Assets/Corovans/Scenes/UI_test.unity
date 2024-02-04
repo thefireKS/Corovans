@@ -2739,6 +2739,7 @@ MonoBehaviour:
   spells:
   - {fileID: -7488573805279828274, guid: 9853eea0bb915d7418d898d5833b5737, type: 3}
   - {fileID: -7488573805279828274, guid: 3dc6914666eac64468d5a18c30541b8f, type: 3}
+  - {fileID: -7488573805279828274, guid: c9c750aafd5a19349b15c0f1c66341a0, type: 3}
 --- !u!4 &1568611937
 Transform:
   m_ObjectHideFlags: 0
