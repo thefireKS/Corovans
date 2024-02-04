@@ -42,6 +42,7 @@ namespace Corovans.Scripts.Entities.Enemies
                 else
                 {
                     var direction = (_target.position - transform.position).normalized;
+                    transform.rotation = Quaternion.Euler(direction);
                     _rigidbody2D.velocity = direction * speed;
                 }
             }
