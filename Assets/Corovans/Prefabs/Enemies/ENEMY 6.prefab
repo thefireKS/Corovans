@@ -104,7 +104,7 @@ MonoBehaviour:
   distanceToAttack: 3
   restDuration: 3
   damage: 1
-  speed: 12
+  speed: 35
 --- !u!114 &2769053835458255210
 MonoBehaviour:
   m_ObjectHideFlags: 0
