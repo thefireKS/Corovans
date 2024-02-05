@@ -136,7 +136,175 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Camel
+      name: Horses_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d67faef6b764d419f8d32d6f89475f
+      internalID: 1531274173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d07d9f5fc4846549a2f8953fe742804
+      internalID: 1832985473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d6eb36a49326e4199f5175cb30fdb7
+      internalID: 351017583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 703c66bb99a6b0741ada31f731358213
+      internalID: 1352605228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2feff55f9dd07c4ba696f7303683aeb
+      internalID: -205655633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_5
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 932336f5b4c2b4748b89c7a2db569ab6
+      internalID: -1044793429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38b40e689a96d7545b8c567a6a04bf84
+      internalID: -910734719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_7
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c3bc11b8afc4c44a31771e6454898c
+      internalID: 1336787307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Horses_8
       rect:
         serializedVersion: 2
         x: 0
@@ -144,20 +312,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 94c399115c93c334fa621f37ef04a08f
-      internalID: -163107731
+      spriteID: c6a1e9827853ca547b14a75d5334f0bb
+      internalID: -1555123747
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Horse_1
+      name: Horses_9
       rect:
         serializedVersion: 2
         x: 32
@@ -165,20 +333,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4686aa7d65709c14fa7051f19319e5eb
-      internalID: -1596373560
+      spriteID: 1d49b9276527c634c8d443dc108e043d
+      internalID: -1990740634
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Horse_2
+      name: Horses_10
       rect:
         serializedVersion: 2
         x: 64
@@ -186,20 +354,20 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c46392cf165279b488e286d473627ce9
-      internalID: -850276374
+      spriteID: cf22ac503c7290046bb3a3c91c79ffae
+      internalID: -1780005072
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CarF1
+      name: Horses_11
       rect:
         serializedVersion: 2
         x: 96
@@ -213,8 +381,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f8622efda37abd49b89de1c25170ec7
-      internalID: 1597647560
+      spriteID: 875abb508dac5fa4283f9749fac07df0
+      internalID: 924883957
       vertices: []
       indices: 
       edges: []
@@ -230,10 +398,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Camel: -163107731
-      CarF1: 1597647560
-      Horse_1: -1596373560
-      Horse_2: -850276374
+      Horses_0: 1531274173
+      Horses_1: 1832985473
+      Horses_10: -1780005072
+      Horses_11: 924883957
+      Horses_2: 351017583
+      Horses_3: 1352605228
+      Horses_4: -205655633
+      Horses_5: -1044793429
+      Horses_6: -910734719
+      Horses_7: 1336787307
+      Horses_8: -1555123747
+      Horses_9: -1990740634
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
