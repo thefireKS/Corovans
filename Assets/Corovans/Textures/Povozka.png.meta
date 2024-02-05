@@ -69,7 +69,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 256
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -144,7 +144,7 @@ TextureImporter:
         width: 24
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
         width: 34
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
         width: 34
         height: 39
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
         width: 36
         height: 48
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -215,6 +215,258 @@ TextureImporter:
       bones: []
       spriteID: cc21ee53cc6bf034eb92d3475f1d7365
       internalID: 1007709923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_4
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 290
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 565a65e3b2f21fb4c98114e127bd0cef
+      internalID: -1046415756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_5
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 257
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54816f9e01f307479c5373c2d1a21d7
+      internalID: -944102501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_6
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 198
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f60b83b42652b2d449528e9fa6ecbba6
+      internalID: -692139921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_7
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 170
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6df627c53474b141901dca1b3f7949f
+      internalID: 1273314626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_8
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 290
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602a443f4f7b7bf4d854efad629f3565
+      internalID: 1367744853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_9
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 257
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a661e748f8d0d409afcb653449f322
+      internalID: -963663762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_10
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 198
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dbd1cd9a239b742b6b0790903b2c64
+      internalID: 128926056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_11
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 170
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fe473c619933c44954be708acbe25e
+      internalID: -331809097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_12
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 130
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44c444ee7c5ef3e4da2c4ee862e7d634
+      internalID: 1580735188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_13
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 97
+        width: 34
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3833b9ad95e94c5419d1a243301af0ee
+      internalID: -1675769848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_14
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 38
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41892df32a4c2b743a783c53d9a2a188
+      internalID: 1879349876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Povozka_15
+      rect:
+        serializedVersion: 2
+        x: 267
+        y: 10
+        width: 36
+        height: 48
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e795e26f6e785f74b85ecfc07e7d9b59
+      internalID: -712828184
       vertices: []
       indices: 
       edges: []
@@ -232,8 +484,20 @@ TextureImporter:
     nameFileIdTable:
       Povozka_0: 1323674617
       Povozka_1: -1211636143
+      Povozka_10: -963663762
+      Povozka_11: 128926056
+      Povozka_12: -331809097
+      Povozka_13: 1580735188
+      Povozka_14: -1675769848
+      Povozka_15: 1879349876
       Povozka_2: -2092264583
       Povozka_3: 1007709923
+      Povozka_4: -2121648408
+      Povozka_5: -1046415756
+      Povozka_6: -944102501
+      Povozka_7: -692139921
+      Povozka_8: 1273314626
+      Povozka_9: 1367744853
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
