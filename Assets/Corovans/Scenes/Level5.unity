@@ -727,9 +727,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25978d41cff86c84082b8e8ea5215298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <WagonPrefab>k__BackingField: {fileID: 2265912896553260975, guid: 8248b39aed701804a97714c0a57f9303, type: 3}
-  <MarksmanPrefab>k__BackingField: {fileID: 7635567924902733213, guid: 01c934c6ae887f14485dc0a1d0400032, type: 3}
-  <HorsePrefab>k__BackingField: {fileID: 7311716985503827309, guid: 614d1145c84565e42852d701c34f28d7, type: 3}
+  <WagonPrefab>k__BackingField: {fileID: 2265912896553260975, guid: c4f617df0f54c6145bb37a1b27141837, type: 3}
+  <MarksmanPrefab>k__BackingField: {fileID: 7635567924902733213, guid: c0ef10a916203b140ae714adcc0a4ad6, type: 3}
+  <HorsePrefab>k__BackingField: {fileID: 7311716985503827309, guid: 5f2a5a072c5c437489d266b235a6bbf6, type: 3}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

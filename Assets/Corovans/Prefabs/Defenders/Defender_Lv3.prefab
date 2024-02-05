@@ -129,6 +129,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498e0a7323c177f4ca9716000d7a61f3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  projectile: {fileID: 8335286583477195372, guid: 38ac263952195fa4183017bb0b217864, type: 3}
+  projectile: {fileID: 8335286583477195372, guid: 9dbfa60b603d3bf4c85d91f31fff5dab, type: 3}
   spawnProjectilePoint: {fileID: 3946710200548980675}
-  timeBetweenAttacks: 2.5
+  timeBetweenAttacks: 0.6

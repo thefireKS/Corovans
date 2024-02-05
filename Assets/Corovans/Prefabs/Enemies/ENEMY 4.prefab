@@ -101,10 +101,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e6b7f17f609a0d4c972a184f00ea7f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  distanceToAttack: 3
-  restDuration: 3
+  distanceToAttack: 3.2
+  restDuration: 7
   damage: 1
-  speed: 12
+  speed: 8
 --- !u!114 &2769053835458255210
 MonoBehaviour:
   m_ObjectHideFlags: 0
