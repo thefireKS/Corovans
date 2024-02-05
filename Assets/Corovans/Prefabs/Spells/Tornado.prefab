@@ -47,5 +47,5 @@ MonoBehaviour:
   <PlaySound>k__BackingField: {fileID: 8300000, guid: 717f5d0129180104dad277878d6b3432, type: 3}
   <CardName>k__BackingField: "\u0422\u043E\u0440\u043D\u0430\u0434\u043E"
   <Card>k__BackingField: {fileID: -1210065333, guid: 827ee59a2dbd7a74883bd3e9f23e4dc5, type: 3}
-  <Cost>k__BackingField: 10
+  <Cost>k__BackingField: 20
   entity: {fileID: 3074343640699456534, guid: bff12604beccf3041819a1801f5c8099, type: 3}

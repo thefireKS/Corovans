@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Corovans/Scenes/MainMenu.unity
+    guid: 13297cdaca0cbcb42acc441f6fbe4c0c
+  - enabled: 1
     path: Assets/Corovans/Scenes/UI_test.unity
     guid: 8f09d6bc328249f4e8281e8a95b94b3e
   m_configObjects: {}
