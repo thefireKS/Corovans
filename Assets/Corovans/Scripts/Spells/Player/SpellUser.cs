@@ -1,13 +1,18 @@
 using System.Collections.Generic;
 using Corovans.Scripts.Energy;
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.UI;
 
 namespace Corovans.Scripts.Spells.Player
 {
     public class SpellUser : MonoBehaviour
     {
-        private EnergySystem _energySystem;
+        [SerializeField] private Image cardDisplay;
+        [SerializeField] private TextMeshProUGUI cardNameText;
+        
+        private EnergyManager _energyManager;
         
         private PlayerControls _playerControls;
         
@@ -42,10 +47,12 @@ namespace Corovans.Scripts.Spells.Player
             _playerControls = new();
             _playerControls.Enable();
 
-            _energySystem = FindObjectOfType<EnergySystem>();
+            _energyManager = FindObjectOfType<EnergyManager>();
             
             ShuffleSpellArray();
             _currentSpell = _randomSpellQueue.Dequeue();
+            cardDisplay.sprite = _currentSpell.Card;
+            cardNameText.text = _currentSpell.CardName;
         }
 
         private void OnEnable()
@@ -60,10 +67,13 @@ namespace Corovans.Scripts.Spells.Player
 
         private void UseCurrentSpell(InputAction.CallbackContext callbackContext)
         {
-            if(_currentSpell.Cost > _energySystem.CurrentEnergy) return;
+            if(Time.timeScale == 0) return;
+            
+            if(_currentSpell.Cost > _energyManager.CurrentEnergy) return;
             
             _currentSpell.UseSpell();
-            _energySystem.ConsumeEnergy(_currentSpell.Cost);
+            AudioSource.PlayClipAtPoint(_currentSpell.PlaySound, transform.position);
+            _energyManager.ConsumeEnergy(_currentSpell.Cost);
             
             if (_randomSpellQueue.Count == 0)
             {
@@ -71,6 +81,8 @@ namespace Corovans.Scripts.Spells.Player
             }
             
             _currentSpell = _randomSpellQueue.Dequeue();
+            cardDisplay.sprite = _currentSpell.Card;
+            cardNameText.text = _currentSpell.CardName;
         }
     }
 }

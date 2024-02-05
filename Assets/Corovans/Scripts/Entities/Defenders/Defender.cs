@@ -2,18 +2,19 @@ using System.Collections;
 using Corovans.Scripts.Entities.Enemies;
 using UnityEngine;
 
-namespace Corovans.Scripts.Entities.Deffenders
+namespace Corovans.Scripts.Entities.Defenders
 {
     public class Defender : MonoBehaviour
     {
         [SerializeField] private GameObject projectile;
+        [SerializeField] private Transform spawnProjectilePoint;
 
         
         private Transform _currentTarget;
 
         [SerializeField] private float timeBetweenAttacks;
         
-        private bool canAttack = true;
+        private bool _canAttack = true;
 
         private void LateUpdate()
         {
@@ -42,12 +43,11 @@ namespace Corovans.Scripts.Entities.Deffenders
 
         private void Update()
         {
-            if (_currentTarget && canAttack)
+            if (_currentTarget && _canAttack)
             {
-                Projectile currentProjectile = Instantiate(projectile, transform.position, transform.rotation)
-                    .GetComponent<Projectile>();
+                Instantiate(projectile, spawnProjectilePoint.position, spawnProjectilePoint.rotation);
                 
-                if (canAttack)
+                if (_canAttack)
                 {
                     StartCoroutine(AttackCooldown());
                 }
@@ -56,9 +56,9 @@ namespace Corovans.Scripts.Entities.Deffenders
         
         private IEnumerator AttackCooldown()
         {
-            canAttack = false; // Запрещаем атаковать
+            _canAttack = false; // Запрещаем атаковать
             yield return new WaitForSeconds(timeBetweenAttacks); // Ждем заданное время
-            canAttack = true; // Разрешаем атаковать снова
+            _canAttack = true; // Разрешаем атаковать снова
         }
     }
 }

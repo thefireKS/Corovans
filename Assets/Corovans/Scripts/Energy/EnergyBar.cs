@@ -1,22 +1,23 @@
 using Corovans.Scripts.Energy;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace Corovans.Scripts
 {
     public class EnergyBar : MonoBehaviour
     {
-        [SerializeField] private EnergySystem energySystem;
+        [FormerlySerializedAs("energySystem")] [SerializeField] private EnergyManager energyManager;
         [SerializeField] private Slider slider;
 
         private void Awake()
         {
-            slider.maxValue = energySystem.MaxEnergy;
+            slider.maxValue = energyManager.MaxEnergy;
         }
 
         private void Update()
         {
-            slider.value = energySystem.CurrentEnergy;
+            slider.value = energyManager.CurrentEnergy;
         }
     }
 }

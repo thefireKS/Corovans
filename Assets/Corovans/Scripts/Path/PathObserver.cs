@@ -1,5 +1,6 @@
 using PathCreation.Examples;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace Corovans.Scripts
 {
@@ -13,6 +14,9 @@ namespace Corovans.Scripts
         {
             _distanceTraveled += povozka.speed * Time.deltaTime;
             Percentage = _distanceTraveled / povozka.pathCreator.path.length;
+            
+            if(Percentage < 1) return;
+            SceneManager.LoadScene("MainMenu");
         }
     }
 }

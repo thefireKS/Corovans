@@ -7,6 +7,7 @@ namespace Corovans.Scripts.Entities.Defenders.Wagon
     public class WagonController : MonoBehaviour, IDamageable
     {
         [SerializeField] private int maxHealth;
+        [SerializeField] private GameObject loseScreen;
         
         public WagonModel Model { get; private set; }
 
@@ -33,7 +34,8 @@ namespace Corovans.Scripts.Entities.Defenders.Wagon
 
         public void Die()
         {
-            Debug.Log("Wagon died");
+            loseScreen.SetActive(true);
+            Time.timeScale = 0f;
         }
     }
 }
