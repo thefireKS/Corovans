@@ -9,6 +9,21 @@ EditorBuildSettings:
     path: Assets/Corovans/Scenes/MainMenu.unity
     guid: 13297cdaca0cbcb42acc441f6fbe4c0c
   - enabled: 1
-    path: Assets/Corovans/Scenes/UI_test.unity
-    guid: 8f09d6bc328249f4e8281e8a95b94b3e
+    path: Assets/Corovans/Scenes/Level1.unity
+    guid: 0b977bf2bbc06d44eb2f4e18591e8c2c
+  - enabled: 1
+    path: Assets/Corovans/Scenes/Level2.unity
+    guid: 98d0f3caf4b473f418d19f998bc27eda
+  - enabled: 1
+    path: Assets/Corovans/Scenes/Level3.unity
+    guid: 89bf81c6ea524f04b9c8703a6038e22a
+  - enabled: 1
+    path: Assets/Corovans/Scenes/Level4.unity
+    guid: 2c89738b6e0bc6c49be5a4249690c516
+  - enabled: 1
+    path: Assets/Corovans/Scenes/Level5.unity
+    guid: 44597a60c94255b4dad01bdec65d411e
+  - enabled: 1
+    path: Assets/Corovans/Scenes/Level6.unity
+    guid: ef449bb00c24fce4b9c3bd0d4dbcc287
   m_configObjects: {}
