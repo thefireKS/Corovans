@@ -55,11 +55,11 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - _BodyExtraColor: {r: 0, g: 0, b: 0, a: 0}
-    - _BodyMainColor: {r: 0, g: 0, b: 0, a: 0}
-    - _HatExtraColor: {r: 0, g: 0, b: 0, a: 0}
-    - _HatMainColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SwordExtraColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SwordHandleColor: {r: 0, g: 0, b: 0, a: 0}
-    - _SwordMainColor: {r: 0, g: 0, b: 0, a: 0}
+    - _BodyExtraColor: {r: 0.7019608, g: 0.2392157, b: 0.18823531, a: 1}
+    - _BodyMainColor: {r: 0.6392157, g: 0.13333334, b: 0.13333334, a: 1}
+    - _HatExtraColor: {r: 0.13654222, g: 0.5320754, b: 0.09537195, a: 1}
+    - _HatMainColor: {r: 0.22699092, g: 0.631, b: 0.18299001, a: 1}
+    - _SwordExtraColor: {r: 0.68718, g: 0.75215393, b: 0.78, a: 1}
+    - _SwordHandleColor: {r: 0.11698109, g: 0.11698109, b: 0.11698109, a: 1}
+    - _SwordMainColor: {r: 0.41601598, g: 0.4633279, b: 0.64199996, a: 1}
   m_BuildTextureStacks: []
